@@ -6,7 +6,7 @@
 #    By: msantos- <msantos-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/17 16:49:30 by msantos-          #+#    #+#              #
-#    Updated: 2021/06/29 15:46:47 by msantos-         ###   ########.fr        #
+#    Updated: 2021/06/29 19:08:59 by msantos-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,7 +43,7 @@ $(OBJ_PATH)/%.o: $(SRC_PATH)/%.c
 
 submodule:
 	@git submodule init
-	@git submodule update
+	@git submodule update --remote
 #CHECKS THE EXISTANCE OF AN COMPILING FTPRINTF LIBRARY 
 ft_printf:
 	@make -C ft_printf_42  > /dev/null
