@@ -1,26 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msantos- <msantos-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/14 17:40:18 by msantos-          #+#    #+#             */
-/*   Updated: 2019/11/18 20:22:32 by msantos-         ###   ########.fr       */
+/*   Created: 2021/06/30 18:50:18 by msantos-          #+#    #+#             */
+/*   Updated: 2021/06/30 20:18:20 by msantos-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/so_long.h"
 
-void	*ft_calloc(size_t count, size_t size)
+void	printerr(char *str)
 {
-	void	*str;
-	size_t	i;
-
-	i = 0;
-	str = malloc(size * count);
-	if (str == NULL)
-		return (str);
-	ft_bzero(str, size * count);
-	return (str);
+	ft_printf("Error\n%s",str);
+	exit(-1);
 }
